@@ -11,11 +11,16 @@ function App() {
       setMessage("יש למלא את כל השדות");
       return;
     }
+
     setMessage("שומר...");
-    setTimeout(() => {
+    try {
+      // TODO: send to backend Google Sheets API
+      await new Promise((res) => setTimeout(res, 800)); // simulate delay
       setMessage(`${baby} אכל/ה ${amount} מ"ל`);
       setAmount("");
-    }, 800);
+    } catch {
+      setMessage("קרתה שגיאה בשליחה");
+    }
   };
 
   return (
