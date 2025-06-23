@@ -1,0 +1,17 @@
+{
+  "name": "feeding-ui",
+  "version": "1.0.0",
+  "description": "Twin feeding tracker UI",
+  "main": "src/App.js",
+  "scripts": {
+    "start": "parcel public/index.html --open",
+    "build": "parcel build public/index.html"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.0"
+  }
+}
